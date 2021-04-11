@@ -259,15 +259,13 @@ footer {
 }
 
 .skip a{
-  background: #45a7b8;
+  background: white;
   left: 0;
   padding: 7px;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
 
-
-  /*Your code here*/
   position: absolute;
   top: -50px;
 }
