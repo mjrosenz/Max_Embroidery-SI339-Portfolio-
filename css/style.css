@@ -1,0 +1,613 @@
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d4a9809d;
+  padding: 15px;
+  box-shadow: 0em 0px 15px black;
+}
+h1 {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 26px;
+  text-shadow: 1px 0.5px 2px;
+  padding-bottom: 5px;
+    -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+    -moz-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+    animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+}
+
+header img{
+  width: 50%;
+}
+
+header img:hover{
+      will-change: transform;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(
+12.8176deg
+) rotateY(
+-8.03deg
+) rotateZ(
+0deg
+) skew(
+0deg
+, 
+0deg
+);
+transform: ;
+    transform-style: preserve-3d;
+}
+
+nav a{
+  font-style: italic;
+  font-size: 18px;
+  color: black;
+  padding: 6px;
+}
+nav a:hover{
+  text-shadow:#45a7b88c 1px 2px 2px;
+  font-style: italic;
+}
+.current_page{
+  font-style: normal;
+  text-shadow:#45a7b88c 1px 3px 2px;
+  font-weight: bold;
+}
+
+#mini_nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#logo{
+  text-align: center;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8,auto);
+  background-color: #45a7b88c;
+}
+#subheader, h2{
+  display: inline;
+  grid-column: span 1;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  padding: 4px;
+  border: #376a6185 outset 4px;
+  border-radius: 20px;
+  
+}
+
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container img{
+  grid-column: span 1;
+  padding: 15px;
+}
+.container p{
+  padding: 20px;
+}
+
+#me{
+  font-size: 18px;
+}
+
+#me p{
+  padding: 20px;
+}
+
+.outer_layer img{
+  position: absolute;
+  z-index: -1;
+}
+
+.outer_layer p{
+  font-size: 18px;
+}
+
+h3{
+  text-align: right;
+  font-size: 18px;
+  font-weight: 900;
+  padding: 10px;
+  padding-right: 20px;
+}
+
+#form_title{
+  text-align: center;
+  padding-right: 10px;
+  font-size: 30px;
+  border: none;
+  font-weight: 900;
+}
+
+#gallery_background{
+  background-color: #45a7b88c;
+}
+
+#gallery_header{
+  display: inline;
+  padding: 4px;
+  border: #376a6185 outset 4px;
+  border-radius: 20px;
+}
+
+.header_box{
+  text-align: center;
+  padding: 20px;
+}
+
+#faq, #request{
+  background-color: #45a7b88c;
+}
+
+#flex_container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #45a7b88c;
+}
+
+.question_box{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.question_box h4{
+  text-align: right;
+  padding-bottom: 15px;
+  font-size: 25px;
+  font-weight: 1000;
+  margin-left: 10%;
+}
+
+#explanation{
+  background-color: #45a7b88c;
+  padding-top: 0;
+  padding-bottom: 5px;
+  font-size: 22px;
+}
+
+#explanation h3{
+  text-align: center;
+  font-size: 20px;
+}
+
+#explanation >*{
+  margin: 10px 0px;
+}
+
+.drop_menu{
+  border: #376a6185 inset 4px;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 1px 1px 3px;
+  font-size: 18px;
+  /*display: none;*/
+  margin-right: 150px;
+  -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.5s both;
+  -moz-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.5s both;
+  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.5s both;
+}
+
+b{
+  font-weight: 1000;
+}
+
+
+#gallery{
+  display: grid;
+  justify-content: center; 
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5,auto);
+  margin: 1.5em;
+  padding: 0px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#gallery > *{
+  display: inline-block;
+  background: #fff;
+  padding: 1em;
+  margin: 1em 1em 1.5em;
+  width: 165px;
+  height: auto;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-shadow: 2px 2px 4px 0 #ccc;
+  border-radius: 20px;
+  grid-column: span 1;
+  justify-items: center;
+}
+
+.caption{
+  text-align: left;
+}
+
+#gallery> * img {
+  width: 135px;
+  height: auto;
+}
+
+fieldset{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #45a7b88c;
+}
+
+fieldset>*{
+  font-size: 18px;
+  display: block;
+  margin: 6px auto;
+  padding: 10px;
+  border-style: solid;
+  border-width: .25em;
+  border: #376a6185 inset 4px;
+  border-radius: 20px;
+  text-align: center;
+  width: 60%;
+}
+
+label{
+  border: none;
+  padding: 0;
+}
+
+
+#submit{
+  width: 30%;
+  font-size: 16px;
+  font-family: 'Montserrat';
+  font-weight: 800;
+}
+
+footer {
+  text-align: center;
+  background-color: #d4a9809d;
+  padding: 10px;
+}
+
+.question_box img{
+  width: 50px;
+  margin-left: 15px;
+  display: none;
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 7px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+
+
+  /*Your code here*/
+  position: absolute;
+  top: -50px;
+}
+.skip a:focus{
+  position: absolute;
+  top: 10px
+}
+.flip-card-back{
+  align-self: center;
+}
+/* Tablet Media Query */
+
+@media only screen 
+  and (min-device-width: 768px) {
+
+  h1{
+    font-size: 40px;
+  }
+  nav{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+  }
+  #mini_nav{
+    text-align: center;
+  }
+  nav a{
+    font-size: 30px;
+  }
+  h3{
+    font-size: 30px;
+  }
+
+  .outer_layer p, #me p{
+    padding: 0;
+  }
+  
+  .outer_layer{
+    margin-left: 20px;
+    width: 650px;
+    padding: 10px;
+    font-size: 22px;
+    border: #376a6185 outset 4px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  footer{
+    font-size: 20px;
+  }
+  #gallery{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3,auto);
+  }
+  #gallery > *{
+    width: 220px;
+    text-align: center;
+    justify-self: center;
+  }
+
+  .caption{
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+  }
+  #explanation >*{
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  fieldset>*{
+    font-size: 25px
+  }
+  legend{
+    font-size: 40px;
+  }
+  #submit{
+    margin-bottom: 20px;
+    font-size: 30px;
+    width: 150px;
+  }
+}
+@media only screen 
+  and (min-device-width: 1024px) {
+    header{
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+    header img{
+      width: 150px;
+    }
+    h1{
+      font-size: 125%;
+      text-align: left;
+    }
+    #logo{
+      display: flex;
+      flex-direction: column;
+    }
+    #mini_nav{
+      justify-content: space-evenly;
+      width: 400px;
+    }
+    nav{
+      display: flex;
+      justify-content: space-evenly;
+    }
+    nav a{
+      font-size: 20px;
+    }
+    #parallax {
+      /* The image used */
+      background-image: url("../images/Logo.svg");
+    
+      /* Set a specific height */
+      min-height: 100px;
+    
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    } 
+ 
+    .container{
+      display: grid;
+      grid-template-columns: 400px 300px 300px;
+      grid-template-rows: 100px 175px 175px 100px 250px 175px 100px auto+25px;
+      justify-content: center;
+    }
+
+    .header_box{
+      grid-row: 1;
+      grid-column: 1 / -1;
+      align-self: center;
+    }
+    #me2{
+      grid-row: 2/4;
+      grid-column: span 1;
+      width: 400px;
+      align-self: center;
+    }
+
+    #hi{
+      grid-row: 2;
+      grid-column: 2/-1;
+      align-self: self-end;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    #intro{
+      grid-row: 3;
+      grid-column: 2/-1;
+    }
+
+    #parallax{
+      grid-row: 4;
+      grid-column: 1/-1;
+
+    }
+
+    #why{
+      grid-row: 5;
+      grid-column: 2/-1;
+      align-self: center;
+      font-size: 40px;
+      align-self: self-end;
+      margin-bottom: 20px;
+    }
+
+    #learn{
+      grid-row: 6;
+      grid-column: 2/-1;;
+    }
+    #embroidering{
+      grid-row: 5/7;
+      grid-column: 0/1;
+      align-self: center;
+      width: 400px;
+    }
+
+    #catharsis{
+      grid-row: 7;
+      grid-column: 2/-1;
+      align-self: self-end;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    #therapy{
+      grid-row: 8;
+      grid-column: 1/-1;
+      width: 600px;
+      align-self: right;
+      grid-column: 1/-1;
+      width: 1000px;
+      height: fit-content;
+    }
+
+    .outer_layer{
+      width: 600px;
+      margin: 0;
+      height: 150px;
+      align-self: flex-start;
+    }
+
+    .outer_layer p{
+      font-size: 20px;
+    }
+
+    #gallery{
+      justify-content: center;
+      align-content: center;
+    }
+
+    .regular h3, .regular img {
+      display: none;
+    }
+
+    .flip-card, #gallery > * {
+      border: 1px solid #f1f1f1;
+      perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      width: 270px;
+      height: 270px;
+      
+    }
+    
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      align-content: center;
+      
+    }
+    
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner,
+    .flip-card:focus .flip-card-inner,
+    .flip-card:active .flip-card-inner,
+    .flip-card:focus .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    
+    /* Position the front and back side */
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+    }
+    
+    /* Style the front side (fallback if image is missing) */
+    
+    /* Style the back side */
+    .flip-card-back {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #d4a9809d;
+      color: black;
+      transform: rotateY(180deg);
+    }
+    #gallery> * img{
+      align-self: center;
+      width: auto;
+    }
+    #caption{
+      font-size: 16px;
+    }
+
+}
+
+@media screen and (prefers-reduced-motion) { 
+  h1{
+    animation: none;
+  }
+  .drop_menu{
+    animation: none;
+  }
+}
