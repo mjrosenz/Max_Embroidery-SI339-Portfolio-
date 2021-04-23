@@ -616,7 +616,7 @@ footer {
       background-repeat: no-repeat;
       background-size:cover;
   }
-    .flip-card, #gallery > * {
-    perspective: none;
+    .flip-card-inner{
+    transition: none;
   }
 }
